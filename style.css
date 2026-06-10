@@ -1,0 +1,1203 @@
+/* RESET */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:
+
+linear-gradient(
+135deg,
+#081c15,
+#1b4332
+);
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+
+
+/* LINKS */
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+
+
+/* NAVBAR */
+
+nav{
+
+position:sticky;
+
+top:0;
+
+width:100%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:15px 50px;
+
+background:rgba(8,28,21,.95);
+
+backdrop-filter:blur(10px);
+
+z-index:1000;
+
+}
+
+nav h2{
+
+font-size:1.7rem;
+
+font-weight:700;
+
+color:#e8a020;
+
+margin-bottom:5px;
+
+}
+
+.logo p{
+
+font-size:.95rem;
+
+color:#ffffff;
+
+opacity:.8;
+
+}
+
+.language button{
+
+padding:15px 30px;
+
+font-size:1rem;
+
+font-weight:700;
+
+margin:0;
+
+border-radius:15px;
+
+}
+
+
+nav ul{
+
+display:flex;
+
+gap:25px;
+
+list-style:none;
+
+}
+
+
+
+nav a{
+
+color:white;
+
+font-size:1rem;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+color:#e8a020;
+
+}
+
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:0 20px;
+
+}
+
+
+
+.hero-content{
+
+width:100%;
+
+max-width:1000px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+
+.hero h1{
+
+font-size:5rem;
+
+font-weight:800;
+
+line-height:1.1;
+
+margin-bottom:25px;
+
+color:#ffffff;
+
+max-width:900px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:30px;
+
+justify-content:center;
+
+align-items:center;
+
+margin-top:40px;
+
+}
+
+
+
+.hero p{
+
+font-size:1.3rem;
+
+line-height:1.8;
+
+max-width:900px;
+
+margin-bottom:25px;
+
+}
+/* BUTTONS */
+
+button{
+
+padding:18px 45px;
+
+background:#e8a020;
+
+border:none;
+
+border-radius:15px;
+
+font-size:22px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+display:block;
+
+margin:40px auto;
+
+box-shadow:
+
+0 0 30px rgba(232,160,32,.3);
+
+}
+
+
+
+button:hover{
+
+background:#f5c046;
+
+transform:translateY(-5px);
+
+box-shadow:
+
+0 0 50px rgba(232,160,32,.7);
+
+}
+
+
+
+/* SPECIAL BUTTON LINKS */
+
+.complaint-btn{
+
+display:inline-block;
+
+padding:18px 45px;
+
+background:#e8a020;
+
+color:black;
+
+font-size:22px;
+
+font-weight:700;
+
+border-radius:15px;
+
+margin-top:50px;
+
+transition:.3s;
+
+box-shadow:
+
+0 0 30px rgba(232,160,32,.3);
+
+}
+
+
+
+.complaint-btn:hover{
+
+background:#f5c046;
+
+transform:translateY(-5px);
+
+box-shadow:
+
+0 0 50px rgba(232,160,32,.7);
+
+}
+/* SECTIONS */
+
+section{
+
+padding:120px 10%;
+
+border-bottom:
+
+2px solid rgba(232,160,32,.2);
+
+}
+
+
+
+/* SECTION HEADINGS */
+
+section h1{
+
+font-size:4rem;
+
+text-align:center;
+
+color:#e8a020;
+
+margin-bottom:70px;
+
+font-weight:700;
+
+}
+
+
+
+/* PARAGRAPHS */
+
+section p{
+
+font-size:1.15rem;
+
+line-height:2;
+
+}
+
+
+
+/* CARDS CONTAINER */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(300px,1fr));
+
+gap:40px;
+
+margin-top:60px;
+
+}
+
+
+
+/* INDIVIDUAL CARDS */
+
+.card{
+
+background:
+
+rgba(27,67,50,.9);
+
+padding:40px;
+
+border-radius:25px;
+
+transition:.4s;
+
+border:
+
+1px solid rgba(232,160,32,.2);
+
+box-shadow:
+
+0 0 20px rgba(0,0,0,.2);
+
+}
+
+
+
+.card:hover{
+
+transform:
+
+translateY(-10px);
+
+border-color:#e8a020;
+
+box-shadow:
+
+0 0 40px rgba(232,160,32,.3);
+
+}
+
+
+
+/* CARD TITLES */
+
+.card h2{
+
+font-size:2rem;
+
+color:#e8a020;
+
+margin-bottom:25px;
+
+}
+
+
+
+/* CARD TEXT */
+
+.card p{
+
+font-size:1.05rem;
+
+line-height:1.9;
+
+color:white;
+
+}
+
+
+
+/* ABOUT SECTION */
+
+#about{
+
+text-align:center;
+
+}
+
+
+
+#about p{
+
+max-width:950px;
+
+margin:auto;
+
+}
+
+
+
+/* CORE VALUES */
+
+#values{
+
+text-align:center;
+
+}
+
+
+
+/* VISION */
+
+#vision{
+
+text-align:center;
+
+}
+
+
+
+#vision p{
+
+color:white;
+
+}
+
+
+
+/* NEWS SECTION */
+
+#news{
+
+text-align:center;
+
+}
+
+
+
+#news .card{
+
+background:
+
+rgba(20,80,55,.9);
+
+}
+
+
+
+/* GALLERY */
+
+#gallery{
+
+text-align:center;
+
+}
+
+
+
+#gallery p{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+
+
+/* SOCIAL MEDIA */
+
+#social{
+
+text-align:center;
+
+}
+
+
+
+#social p{
+
+max-width:900px;
+
+margin:auto;
+
+}
+/* ========================= */
+/* FOUNDER SECTION */
+/* ========================= */
+
+#founder{
+
+text-align:center;
+
+}
+
+
+
+#founder img{
+
+width:320px;
+
+max-width:90%;
+
+border-radius:25px;
+
+margin-bottom:40px;
+
+border:4px solid #e8a020;
+
+box-shadow:
+
+0 0 50px rgba(232,160,32,.4);
+
+transition:.4s;
+
+}
+
+
+
+#founder img:hover{
+
+transform:scale(1.03);
+
+box-shadow:
+
+0 0 70px rgba(232,160,32,.6);
+
+}
+
+
+
+#founder h3{
+
+font-size:1.5rem;
+
+color:#e8a020;
+
+margin-bottom:30px;
+
+}
+
+
+
+#founder p{
+
+max-width:1000px;
+
+margin:auto;
+
+line-height:2;
+
+}
+
+
+
+/* ========================= */
+/* FOUNDER MESSAGE */
+/* ========================= */
+
+.quote{
+
+max-width:1000px;
+
+margin:auto;
+
+padding:40px;
+
+background:
+
+rgba(27,67,50,.8);
+
+border-left:
+
+6px solid #e8a020;
+
+border-radius:20px;
+
+font-style:italic;
+
+line-height:2;
+
+font-size:1.2rem;
+
+box-shadow:
+
+0 0 30px rgba(0,0,0,.2);
+
+}
+
+
+
+/* ========================= */
+/* JOURNEY */
+/* ========================= */
+
+#impact{
+
+text-align:center;
+
+}
+
+
+
+#impact p{
+
+max-width:1000px;
+
+margin:auto;
+
+line-height:2;
+
+}
+
+
+
+/* ========================= */
+/* JOIN SECTION */
+/* ========================= */
+
+#join{
+
+text-align:center;
+
+}
+
+
+
+#join p{
+
+max-width:1000px;
+
+margin:auto;
+
+line-height:2;
+
+}
+
+
+
+/* ========================= */
+/* DONATION SECTION */
+/* ========================= */
+
+#donate{
+
+text-align:center;
+
+}
+
+
+
+#donate p{
+
+max-width:1000px;
+
+margin:auto;
+
+line-height:2;
+
+}
+
+
+
+#donate h2{
+
+font-size:2.3rem;
+
+color:#e8a020;
+
+margin-top:40px;
+
+}
+
+
+
+/* ========================= */
+/* UPI BOX */
+/* ========================= */
+
+.upi-box{
+
+display:inline-block;
+
+padding:25px 50px;
+
+background:
+
+rgba(27,67,50,.95);
+
+border:
+
+3px solid #e8a020;
+
+border-radius:20px;
+
+font-size:2rem;
+
+font-weight:700;
+
+color:white;
+
+margin-top:30px;
+
+box-shadow:
+
+0 0 35px rgba(232,160,32,.4);
+
+transition:.4s;
+
+}
+
+
+
+.upi-box:hover{
+
+transform:scale(1.05);
+
+box-shadow:
+
+0 0 60px rgba(232,160,32,.7);
+
+}
+
+
+
+/* ========================= */
+/* MEMBER APPLICATION */
+/* ========================= */
+
+#join button{
+
+margin-top:50px;
+
+}
+
+
+
+/* ========================= */
+/* SUPPORT BUTTON */
+/* ========================= */
+
+#donate button{
+
+margin-top:50px;
+
+}
+/* ========================= */
+/* COMPLAINTS SECTION */
+/* ========================= */
+
+#complaints{
+
+text-align:center;
+
+}
+
+
+
+#complaints p{
+
+max-width:1000px;
+
+margin:auto;
+
+line-height:2;
+
+}
+
+
+
+#complaints button{
+
+margin-top:50px;
+
+}
+
+
+
+/* ========================= */
+/* SOCIAL MEDIA */
+/* ========================= */
+
+#social{
+
+text-align:center;
+
+}
+
+
+
+#social p{
+
+max-width:900px;
+
+margin:auto;
+
+line-height:2;
+
+}
+
+
+
+/* ========================= */
+/* CONTACT */
+/* ========================= */
+
+#contact{
+
+text-align:center;
+
+}
+
+
+
+#contact p{
+
+max-width:900px;
+
+margin:auto;
+
+line-height:2;
+
+font-size:1.15rem;
+
+}
+
+
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer{
+
+background:
+
+linear-gradient(
+135deg,
+#06140f,
+#081c15
+);
+
+padding:60px;
+
+text-align:center;
+
+border-top:
+
+3px solid rgba(232,160,32,.2);
+
+}
+
+
+
+footer p{
+
+line-height:2;
+
+font-size:1.05rem;
+
+color:#cccccc;
+
+}
+
+
+
+/* ========================= */
+/* SMOOTH ANIMATIONS */
+/* ========================= */
+
+.card,
+button,
+.upi-box,
+.quote,
+#founder img{
+
+transition:.4s ease;
+
+}
+
+
+
+/* ========================= */
+/* HOVER EFFECTS */
+/* ========================= */
+
+section h1{
+
+position:relative;
+
+}
+
+
+
+section h1::after{
+
+content:"";
+
+display:block;
+
+width:120px;
+
+height:4px;
+
+background:#e8a020;
+
+margin:20px auto;
+
+border-radius:20px;
+
+}
+
+
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media(max-width:1000px){
+
+nav{
+
+padding:20px 30px;
+
+}
+
+
+
+nav ul{
+
+gap:20px;
+
+}
+
+
+
+.hero h1{
+
+font-size:3.5rem;
+
+}
+
+
+
+section h1{
+
+font-size:3rem;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+nav{
+
+flex-direction:column;
+
+gap:25px;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:15px;
+
+}
+
+
+
+.hero{
+
+padding-top:140px;
+
+}
+
+
+
+.hero h1{
+
+font-size:2.8rem;
+
+}
+
+
+
+.hero p{
+
+font-size:1.1rem;
+
+}
+
+
+
+section{
+
+padding:90px 7%;
+
+}
+
+
+
+.card{
+
+padding:30px;
+
+}
+
+
+
+.card h2{
+
+font-size:1.7rem;
+
+}
+
+
+
+.upi-box{
+
+font-size:1.3rem;
+
+padding:20px;
+
+}
+
+
+
+#founder img{
+
+width:220px;
+
+}
+
+
+
+.quote{
+
+padding:30px;
+
+font-size:1rem;
+
+}
+
+}
+
+
+
+/* ========================= */
+/* EXTRA SMALL DEVICES */
+/* ========================= */
+
+@media(max-width:500px){
+
+.hero h1{
+
+font-size:2.2rem;
+
+}
+
+
+
+section h1{
+
+font-size:2.3rem;
+
+}
+
+
+
+.card h2{
+
+font-size:1.4rem;
+
+}
+
+
+
+button{
+
+font-size:18px;
+
+padding:15px 30px;
+
+}
+
+}
+
+#hero-title{
+
+transition:.3s;
+
+}
+
+#hero-text{
+
+transition:.3s;
+
+}
+#documents{
+
+padding:120px 10%;
+
+text-align:center;
+
+}
+
+#documents p{
+
+font-size:1.2rem;
+
+line-height:2;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+#documents button{
+
+margin-top:20px;
+
+}
